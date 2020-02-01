@@ -1,0 +1,152 @@
+/* Conternido Proyectos Futuro (Por terminar) */
+.bloque_img_proyecto{
+  width:100%;
+  height:100%;
+  float:left;
+  overflow:hidden;
+}
+.bloque_img_proyecto:nth-child(1){
+  padding-top:110px;
+}
+
+
+
+/* Contenido Proyectos Actual (Finalziado) */
+.contenido_proyectos{
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  padding-top:110px;
+}
+
+.title_proyecto{
+  width:100%;
+  height:auto;
+  float:left;
+  position:relative;
+}
+.title_proyecto h1{
+  text-align:center;
+  margin:20px 0;
+  text-transform:uppercase;
+}
+
+.img_proyecto{
+  width:100%;
+  height:auto;
+  float:left;
+  margin:5px 0;
+}
+.img_proyecto img{
+  display:table;
+  margin:auto;
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:86vh;
+}
+
+.info_proyecto{
+  width:100%;
+  height:auto;
+  margin-top:40px;
+  float:left;
+  position:relative;
+}
+.title_info_proyecto h2{
+  text-transform: uppercase;
+  font-family: "Gotham-Medium";
+  font-weight: 400;
+  display:table;
+  margin:0 auto;
+}
+
+.txt_decoration{
+  width:36px;
+  height:5px;
+  position:absolute;
+  top:48px;
+  left:50%;
+  transform: translate( 0, -50% );
+    -webkit-transform: translate( 0, -50% );
+    -moz-transform: translate( 0, -50% );
+    -ms-transform: translate( 0, -50% );
+    -o-transform: translate( 0, -50% );
+  margin-left:-18px;
+}
+.txt_decoration span{
+  content:'';
+  position:absolute;
+  height:1px;
+  background:#000;
+}
+.txt_decoration span:nth-of-type(1){
+  top:0;
+  left:3px;
+  right:3px;
+  width:30px;
+}
+.txt_decoration span:nth-of-type(2){
+  bottom:0;
+  left:0;
+  right:0;
+  width:36px;
+}
+.contenido_proyectos > .bloque_contenedor > .txt_decoration{
+  top:80px;
+}
+
+.info_proyecto p{
+  text-align:justify;
+}
+.info_proyecto p:nth-of-type(1),
+.info_proyecto p:nth-of-type(2){
+  margin-top:25px;
+}
+.info_proyecto p:last-child{
+  padding-bottom:60px;
+}
+
+
+
+@media screen and (max-width:1220px){
+
+  .info_proyecto{
+    padding:0 20px;
+  }
+
+}/*-- 1220px --*/
+
+@media screen and (max-width:550px){
+
+  .title_proyecto h1{
+    font-size:30px;
+  }
+
+  .title_info_proyecto h2{
+    font-size:18px;
+  }
+  .txt_decoration{
+    top:40px
+  }
+
+}/*-- 1220px --*/
+
+@media screen and (max-width:480px){
+
+  .title_proyecto h1{
+    font-size:26px;
+  }
+  .contenido_proyectos > .bloque_contenedor > .txt_decoration{
+    top:70px;
+  }
+
+}/*-- 1220px --*/
+
+@media screen and (max-width:380px){
+
+  .title_proyecto h1{
+    font-size:22px;
+  }
+
+}/*-- 1220px --*/

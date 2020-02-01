@@ -1,0 +1,112 @@
+/*-- IMG SLIDESHOW --*/
+.slide {
+  width: 100%;
+  height: 100%;
+  padding-top:115px;
+  overflow:hidden;
+}
+.content_slide {
+  width:100%;
+  height:100%;
+}
+.content_slide img {
+  width:100%;
+  height:auto;
+}
+
+/*-- FLECHAS SLIDESHOW --*/
+.Flecha-SlideShow{
+  width:60px;
+  height:60px;
+  position:absolute;
+  top:50%;
+  cursor:pointer;
+  z-index:100;
+  border:1px solid rgba(28, 28, 28, 0.5);
+  /*opacity:0;*/
+  opacity:1;
+  transition:all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -ms-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+}
+.Flecha-SlideShow:hover{
+  border:1px solid #000;
+}
+.Flecha-SlideShow-Izq{
+  left:25px;
+}
+.Flecha-SlideShow-Der{
+  right:25px;
+}
+.Flecha-SlideShow-Der div,
+.Flecha-SlideShow-Izq div{
+  width:100%;
+  height:100%;
+  float:left;
+}
+.Flecha-SlideShow-Izq div span,
+.Flecha-SlideShow-Der div span{
+  content:'';
+  position:absolute;
+  width:30px;
+  height:1px;
+  background:rgb(28, 28, 28);
+}
+.Flecha-SlideShow-Izq div span:hover,
+.Flecha-SlideShow-Der div span:hover{
+  background:rgb(0, 0, 0);
+}
+.Flecha-SlideShow-Izq div span:first-of-type{
+  top:18px;
+  left:15px;
+  transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+.Flecha-SlideShow-Izq div span:last-of-type{
+  top:39px;
+  left:15px;
+  transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.Flecha-SlideShow-Der div span:first-of-type{
+  top:18px;
+  left:15px;
+  transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.Flecha-SlideShow-Der div span:last-of-type{
+  top:39px;
+  left:15px;
+  transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+
+
+/*-- PROGRESS BAR --*/
+#ProgressBar-SlideShow{
+  position:absolute;
+  top:110px;
+  left:0;
+  width:100%;
+  height:5px;
+  background:transparent;
+}
+#ProgressBar-SlideShow div{
+  width:0;
+  height:100%;
+  background:rgba(17, 17, 17, 0.25);
+}

@@ -1,0 +1,21 @@
+/*-- GOTHAM --*/
+
+@font-face {
+	font-family:Gotham-Black; /*Nombre con el que lo vamos a invocar*/
+	src: url(../fonts/gotham/GOTHAM-BLACK.TTF);
+}
+
+@font-face {
+	font-family:Gotham-Bold; /*Nombre con el que lo vamos a invocar*/
+	src: url(../fonts/gotham/GOTHAM-BOLD.TTF);
+}
+
+@font-face {
+	font-family:Gotham-Light; /*Nombre con el que lo vamos a invocar*/
+	src: url(../fonts/gotham/GOTHAM-LIGHT.TTF);
+}
+
+@font-face {
+	font-family:Gotham-Medium; /*Nombre con el que lo vamos a invocar*/
+	src: url(../fonts/gotham/GOTHAM-MEDIUM.TTF);
+}

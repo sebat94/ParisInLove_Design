@@ -1,0 +1,144 @@
+/*-- **************** --*/
+/*--                  --*/
+/*-- ESTILOS GLOBALES --*/
+/*--                  --*/
+/*-- **************** --*/
+
+/*--   * | HTML | BODY   --*/
+*,*:before,*:after{
+  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  margin:0;
+  padding:0;
+  border:0;
+}
+html, body{
+  height:100%;
+  min-height:100%;
+  font-family:"Gotham-Light";
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  image-rendering: optimizeSpeed;
+  image-rendering: optimizeQuality;
+}
+body{
+  width:100%;
+  min-width:320px;
+  line-height: 1.531;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*--   LINKS   --*/
+a{
+  word-wrap:break-word;
+  text-decoration:none;
+  outline:0;
+  color:#000;
+}
+a:active{
+  color:inherit;
+}
+a:link{
+  text-decoration:none;
+}
+
+/* QUITA ESTILOS PREDETERMINADOS EN 'IPAD' Y 'IPHONE' */
+button,
+input:not([type="radio"]):not([type="checkbox"]){
+    -webkit-appearance: none !important;
+    /*-webkit-border-radius: 0;  DANGEROUS NAVEGADORES*/
+}
+
+/*--  RESET -> INPUT & TEXTAREA  --*/
+input,
+textarea{
+  background:transparent;
+  outline:0;
+  font-family:Gotham-Light;
+}
+
+/*--  LISTAS  --*/
+ul,
+ul ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+ul li {
+  position:relative;
+}
+
+/*--  Sólo para trabajos con 'play framework'
+dl,
+dl > dd{
+  width:100%;
+  height:100%;
+  display:block;
+}
+dt{
+  display:none;
+}
+--*/
+
+/*-- IMAGENES --*/
+img[src$=".gif"],
+img[src$=".png"],
+img[src$=".jpg"]{
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering: -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+
+  user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/*--  CLEARFIX  --*/
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*--  PARA QUE NO PUEDAS SUBRAYAR CON EL RATÓN LOS ELEMENTOS Y NO APAREZCA LUZ AZUL AL CLICAR LOS ELEMENTOS DESDE EL MVL  --*/
+.unselectable{
+  user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*--  BLOQUES CONTENEDOR  --*/
+.bloque_contenedor1600,
+.bloque_contenedor1400,
+.bloque_contenedor1200,
+.bloque_contenedor{
+  width:100%;
+  margin:auto;
+  height:100%;
+  float:none;
+  position:relative;
+}
+.bloque_contenedor1600{
+  max-width:1600px;
+}
+.bloque_contenedor1400{
+  max-width:1400px;
+}
+.bloque_contenedor1200,
+.bloque_contenedor{
+  max-width:1200px;
+}

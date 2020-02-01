@@ -1,0 +1,401 @@
+/**********************/
+/*--                --*/
+/*-- MODAL CONTACTO --*/
+/*--                --*/
+/**********************/
+.contacto_2elem{
+	width:100%;
+	height:100%;
+	background:url(../img/personal/fernando.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	padding-top:110px;
+}
+
+.tarjeta_contacto{
+	width:80%;
+	height:660px;
+	margin:auto;
+	position:relative;
+	top:-300px;
+	overflow:hidden;
+	background:#fff;
+	box-shadow: 0px 11px 20px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 11px 20px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 11px 20px 1px rgba(0,0,0,0.3);
+
+	transition: all 0.65s cubic-bezier(0.1, 0.4, 0.1, 0.8);
+    -webkit-transition: all 0.65s cubic-bezier(0.1, 0.4, 0.1, 0.8);
+    -ms-transition: all 0.65s cubic-bezier(0.1, 0.4, 0.1, 0.8);
+	opacity:0.1;
+}
+
+.img_tarjeta_contacto,
+.form_tarjeta_contacto{
+	width:50%;
+	height:100%;
+	float:left;
+	overflow:hidden;
+}
+
+.info_contacto{
+	width:100%;
+	height:100%;
+	background-image:url(../img/parisinlove/9.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	position:relative;
+	float:left;
+}
+.info_contacto:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	width:100%;
+	height:100%;
+}
+.direccion_contacto{
+	width:80%;
+	height:auto;
+	padding:20px 20px 30px 20px;
+	position:relative;
+	left:10%;
+	background:rgba(255, 255, 255, 0.9);
+	overflow:hidden;
+}
+.direccion_contacto{
+	margin-top:180px;
+}
+.direccion_contacto h2{
+	font-size:30px;
+	margin-top:20px;
+}
+.direccion_contacto h2:first-of-type{
+	margin-top:0;
+}
+.direccion_contacto p{
+	font-size:18px;
+}
+
+.form_tarjeta_contacto form{
+	width:80%;
+	position:relative;
+	float:left;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+		-webkit-transform:translate(-50%, -50%);
+		-moz-transform:translate(-50%, -50%);
+		-ms-transform:translate(-50%, -50%);
+		-o-transform:translate(-50%, -50%);
+	transition:all 1s ease-in;
+		-webkit-transition:all 1s ease-in;
+		-moz-transition:all 1s ease-in;
+		-ms-transition:all 1s ease-in;
+		-o-transition:all 1s ease-in;
+	opacity:0;
+}
+.form_tarjeta_contacto form h1{
+	font-size:36px;
+	text-align:center;
+	position:relative;
+	top:-10px;			/* jQuery - Se moverá hasta el 0 para quedarse en la posición original */
+
+	transition:all 0.65s ease-in;
+		-webkit-transition:all 0.65s ease-in;
+		-moz-transition:all 0.65s ease-in;
+		-ms-transition:all 0.65s ease-in;
+		-o-transition:all 0.65s ease-in;
+	opacity:0.1;
+}
+.text_decoration{
+  width:36px;
+  height:5px;
+  position:absolute;
+  top:50px;			/* jQuery - Se moverá hasta el 60px para quedarse en la posición correcta */
+  left:50%;
+  transform: translate( 0, -50% );
+    -webkit-transform: translate( 0, -50% );
+    -moz-transform: translate( 0, -50% );
+    -ms-transform: translate( 0, -50% );
+    -o-transform: translate( 0, -50% );
+  margin-left:-18px;
+
+	transition:all 0.65s ease-in;
+		-webkit-transition:all 0.65s ease-in;
+		-moz-transition:all 0.65s ease-in;
+		-ms-transition:all 0.65s ease-in;
+		-o-transition:all 0.65s ease-in;
+	opacity:0.1;
+}
+.text_decoration span{
+  content:'';
+  position:absolute;
+  height:1px;
+  background:#000;
+}
+.text_decoration span:nth-of-type(1){
+  top:0;
+  left:3px;
+  right:3px;
+  width:30px;
+}
+.text_decoration span:nth-of-type(2){
+  bottom:0;
+  left:0;
+  right:0;
+  width:36px;
+}
+
+
+
+.input_form_contacto{
+	width:100%;
+	height:40px;
+	position:relative;
+	float:left;
+	margin-top:30px;
+}
+.input_form_contacto:last-of-type{
+	height:120px;
+}
+.input_form_contacto input{
+	width:100%;
+	height:100%;
+}
+.input_form_contacto label{
+	width:auto;
+	height:40px;
+	display:inline;
+	position:absolute;
+	top:0;
+
+	padding-left:5px;
+	font-size:18px;
+
+	transition:all 0.25s ease;
+		-webkit-transition:all 0.25s ease;
+		-moz-transition:all 0.25s ease;
+		-ms-transition:all 0.25s ease;
+		-o-transition:all 0.25s ease;
+	cursor:text;
+	opacity:0.5;
+}
+.input_form_contacto input,
+.input_form_contacto textarea{
+	width:100%;
+	height:100%;
+	font-size:20px;
+	padding:0 5px;
+	border-bottom:1px solid rgb(17, 17, 17);
+}
+.input_form_contacto textarea{
+	padding-top:5px;
+	resize:none;
+}
+.form_tarjeta_contacto form input[type="submit"]{
+	width:50%;
+	height:40px;
+	margin-top:40px;
+	font-size:20px;
+	cursor:pointer;
+	border:1px solid rgb(17, 17, 17);
+
+	transition:all 0.25s ease;
+		-webkit-transition:all 0.25s ease;
+		-moz-transition:all 0.25s ease;
+		-ms-transition:all 0.25s ease;
+		-o-transition:all 0.25s ease;
+}
+.form_tarjeta_contacto form input[type="submit"]:hover{
+	background:rgb(17, 17, 17);
+	color:#fff;
+}
+
+.trans_contact_send_success{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background:rgba(0, 0, 0, 0.4);
+	display:none;
+}
+.contact_send_success{
+	width:300px;
+	height:auto;
+	padding:20px;
+	background:#fff;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+		-webkit-transform:translate(-50%, -50%);
+		-moz-transform:translate(-50%, -50%);
+		-ms-transform:translate(-50%, -50%);
+		-o-transform:translate(-50%, -50%);
+	box-shadow: 0px 11px 20px 1px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 0px 11px 20px 1px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 11px 20px 1px rgba(0,0,0,0.5);
+	transition: all 0.65s ease;
+		-webkit-transition: all 0.65s ease;
+		-ms-transition: all 0.65s ease;
+	z-index:9999;
+	opacity:0;
+}
+.txt_success{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	text-align:center;
+}
+.txt_success{
+	padding:6px 5px 0 15px;
+}
+.txt_success span{
+	font-size:26px;
+}
+.contact_send_success i{
+	width:40px;
+	height:40px;
+	position:absolute;
+	top:0px;
+	right:0px;
+	color:rgb(28, 28, 28);
+	cursor:pointer;
+	display:block;
+	font-size:32px;
+	text-align:center;
+	line-height:40px;
+}
+
+
+@media screen and (max-width:1600px){
+
+	.tarjeta_contacto{
+		height:600px;
+	}
+
+}/*-- 1600px --*/
+
+
+@media screen and (max-width:1400px){
+
+	.tarjeta_contacto{
+		height:540px;
+	}
+
+	.input_form_contacto:last-of-type{
+		height:80px;
+	}
+
+}/*-- 1400px --*/
+
+
+@media screen and (max-width:1200px){
+
+	.tarjeta_contacto{
+		width:90%;
+		height:auto;
+		margin:30px auto !important;
+	}
+
+	.form_tarjeta_contacto{
+		width:100%;
+		padding:40px 0;
+	}
+
+	.form_tarjeta_contacto form{
+		position:relative;
+		top:0;
+		left:10%;
+		transform: none;
+	    -webkit-transform: none;
+	    -moz-transform: none;
+	    -ms-transform: none;
+	    -o-transform: none;
+	}
+
+	.img_tarjeta_contacto{
+		display:none;
+	}
+
+}/*-- 1200px --*/
+
+
+@media screen and (max-width:860px){
+
+	/* Para que el pie de página no se coma el contacto */
+	.contacto_2elem{
+		min-height:706px;
+	}
+
+}/*-- 860px --*/
+
+
+@media screen and (max-width:768px){
+
+	.tarjeta_contacto{
+		padding:0;
+	}
+
+	.form_tarjeta_contacto form h1{
+		font-size:26px;
+	}
+	.text_decoration{
+		top:50px !important;
+	}
+
+	.input_form_contacto:last-of-type{
+		height:80px;
+	}
+
+	/* Para que el pie de página no se coma el contacto */
+	.contacto_2elem{
+		min-height:690px;
+	}
+
+
+}/*-- 768px --*/
+
+
+@media screen and (max-width:500px){
+
+	.input_form_contacto,
+	.input_form_contacto label{
+		height:30px;
+	}
+	.input_form_contacto:last-of-type{
+		height:30px;
+	}
+
+	.form_tarjeta_contacto form input[type="submit"]{
+		margin-top:30px;
+	}
+
+	/* Para que el pie de página no se coma el contacto */
+	.contacto_2elem{
+		min-height:550px;
+	}
+
+}/*-- 500px --*/
+
+
+@media screen and (max-width:500px){
+
+	.form_tarjeta_contacto{
+		padding:30px 0;
+	}
+	.tarjeta_contacto{
+		margin-top:15px !important;
+		margin-bottom:0 !important;
+	}
+
+}/*-- 500px --*/

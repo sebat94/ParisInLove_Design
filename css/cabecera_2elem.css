@@ -1,0 +1,227 @@
+/*-- CABECERA --*/
+.cabecera_2elem{
+  width:100%;
+  height:110px;
+  position:fixed;
+  top:0;
+  left:0;
+  background:#fff;
+  z-index:1003;
+
+  transition:all 0.45s ease;
+    -webkit-transition:all 0.45s ease;
+    -moz-transition:all 0.45s ease;
+    -ms-transition:all 0.45s ease;
+    -o-transition:all 0.45s ease;
+}
+
+/*-- CABECERA IZQUIERDA LOGOTIPO --*/
+.cabecera_izq{
+  /* width:auto;   Lo ponemos con 'px' para que no coja el 100% de la pantalla en móvil */
+  /*width:80px;*/
+  width:auto;
+  height:100%;
+  padding:5px 0;
+  display:inline-block;
+  float:left;
+
+  transition:all 0.45s ease;
+    -webkit-transition:all 0.45s ease;
+    -moz-transition:all 0.45s ease;
+    -ms-transition:all 0.45s ease;
+    -o-transition:all 0.45s ease;
+}
+.cabecera_izq a{
+  width:100%;
+  height:100%;
+  display:block;
+}
+.cabecera_izq img{
+  width:100%;
+  height:100%;
+}
+
+/*-- CABECERA DERECHA MENU --*/
+.cabecera_der{
+  width:auto;
+  height:100%;
+  float:right;
+}
+.cabecera_der nav,
+.cabecera_der nav > ul{
+  width:100%;
+  height:100%;
+  content:'';
+  display:table;
+  clear:both;
+}
+.cabecera_der nav > ul > li{
+  width:auto;
+  height:100%;
+  display:block;
+  float:left;
+  cursor:pointer;
+}
+.cabecera_der nav > ul > li:hover > a:after{
+  content:'';
+  position:absolute;
+  bottom:26px;
+  left:0;
+  width:100%;
+  height:1px;
+  background:#999;
+}
+
+.cabecera_der nav > ul > li > a{
+  display:block;
+  width:100%;
+  height:100%;
+  padding:0 15px;
+  font-size:20px;
+  text-align:center;
+  text-transform:uppercase;
+  line-height:90px;
+  color:#777;
+
+  transition:all 0.45s ease;
+    -webkit-transition:all 0.45s ease;
+    -moz-transition:all 0.45s ease;
+    -ms-transition:all 0.45s ease;
+    -o-transition:all 0.45s ease;
+  position:relative;
+}
+.cabecera_der nav > ul > li > a.menu_active:after{
+  content:'';
+  position:absolute;
+  bottom:26px;
+  left:0;
+  width:100%;
+  height:1px;
+  background:rgb(222, 164, 110);
+}
+
+.hamburguesa{
+  width:30px;
+  height:38px;
+  position:fixed;
+  top:31px;
+  left:150px;
+  cursor:pointer;
+  display:none;
+
+  transition:all 0.45s ease;
+    -webkit-transition:all 0.45s ease;
+    -moz-transition:all 0.45s ease;
+    -ms-transition:all 0.45s ease;
+    -o-transition:all 0.45s ease;
+}
+.hamburguesa span{
+  width:100%;
+  height:3px;
+  position:absolute;
+  left:0;
+  background:#000;
+  border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+}
+.hamburguesa span:nth-child(1){
+  top:8px;
+}
+.hamburguesa span:nth-child(2){
+  top:18px;
+}
+.hamburguesa span:nth-child(3){
+  top:28px;
+}
+
+
+@media screen and (max-width:1210px){
+
+  /* Margen a los elementos de la cabecera */
+  .cabecera_izq{
+    margin-left:40px;
+  }
+  .cabecera_der{
+    margin-right:40px;
+  }
+
+
+}/*-- 1210px --*/
+
+@media screen and (max-width:860px){
+
+  /* Cambiamos tamaño de las letras del menu del header */
+  .dropdown > span,
+  .cabecera_der nav > ul > li > a{
+    font-size:17px;
+  }
+
+}/*-- 860px --*/
+
+
+@media screen and (max-width:768px){
+
+  /* Cambiamos tamaño de las letras del menu del header */
+  .dropdown > span,
+  .cabecera_der nav ul li a{
+    padding:0 8px;
+  }
+
+}/*-- 768px --*/
+
+
+@media screen and (max-width:700px){
+
+  /* Hacemos aparecer la hamburguesa */
+  .hamburguesa{
+    display:block;
+  }
+
+
+  .cabecera_der{
+    margin-right:0px;
+  }
+
+  /* Adaptamos el menú de navegación al lateral e la pantalla */
+  .cabecera_der{
+    display:block;
+    width:200px;
+    height:auto;
+    margin:0;
+    padding:10px 0;
+    position:fixed;
+    top:90px;
+    left:0;
+    background:#fff;
+    display:none;
+  }
+  .cabecera_der nav ul li{
+    width:100%;
+    height:60px;
+  }
+  .cabecera_der nav ul li a{
+    text-align:left;
+    line-height:40px;
+    padding-top:20px;
+  }
+  .cabecera_der nav > ul > li > a.menu_active::after{
+    width:120px;
+    bottom:5px;
+    left:39px;
+  }
+  .cabecera_der nav > ul > li:hover > a:not(.menu_active):after{
+    display:none;
+  }
+
+  /* Cambiar line-height cuando el menu se contrae */
+  .cabecera_der nav > ul > li > a{
+    line-height:60px !important;
+    padding:0 39px;
+  }
+
+}/*-- 700px --*/
+/* Cuando se pone 'display:none' por el 'toggle' en tamaño pequeño , al agrandarse sigue oculto, por lo tanto
+ lo desocultamos aplicandole desde el tamaño en el que desaparece el menu de la cabecera hacia arriba el 'display:table'
+ que tiene por defecto*/
+@media screen and (min-width:701px){ .cabecera_der{ display:table !important; } }

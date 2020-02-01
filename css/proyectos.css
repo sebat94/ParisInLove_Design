@@ -1,0 +1,156 @@
+.proyectos{
+  width:100%;
+  height:auto;
+  padding-top:110px;
+  float:left;
+  position:relative;
+  padding-bottom:100px;
+}
+
+
+.fila_proyectos{
+  width:100%;
+  height:100%;
+  float:left;
+  margin-top:40px;
+  position:relative;
+  bottom:-200px;        /*-- Efecto jQuery --*/
+  opacity:0;            /*-- Efecto jQuery --*/
+
+  transition:all 1s ease-out;
+    -webkit-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+}
+.fila_proyectos:first-child{
+  margin-top:0;
+}
+
+
+.proyecto{
+  width:580px;
+  height:auto;
+  position:relative;
+  float:left;
+}
+.proyecto:nth-child(2n+1){
+  margin-right:40px;
+}
+
+
+.img_proyecto{
+  width:100%;
+  height:580px;
+  float:left;
+}
+.img_proyecto img{
+  width:100%;
+  height:100%;
+}
+
+
+.txt_proyecto{
+  width:100%;
+  height:60px;
+  float:left;
+  box-shadow: 0px 11px 20px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 11px 20px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 11px 20px 1px rgba(0,0,0,0.3);
+}
+.txt_proyecto p{
+  font-size:26px;
+  text-align:center;
+  padding:10px 0;
+}
+
+
+
+@media screen and (max-width:1280px){
+
+  .proyectos > .bloque_contenedor{
+    max-width:1000px;
+  }
+
+  .proyecto{
+    width:480px;
+  }
+  .img_proyecto{
+    height:480px;
+  }
+
+}/*-- 1280px --*/
+
+
+@media screen and (max-width:1200px){
+
+  .fila_proyectos{
+    bottom:0;             /*-- Cancelamos Efecto jQuery --*/
+    opacity:1;            /*-- Cancelamos Efecto jQuery --*/
+
+}/*-- 1200px --*/
+
+
+@media screen and (max-width:1080px){
+
+  .proyectos > .bloque_contenedor{
+    max-width:800px;
+  }
+
+  .proyecto{
+    width:380px;
+  }
+  .img_proyecto{
+    height:380px;
+  }
+
+}/*-- 1080px --*/
+
+
+@media screen and (max-width:880px){
+
+  .proyectos > .bloque_contenedor{
+    max-width:640px;
+  }
+
+  .proyecto{
+    width:300px;
+  }
+  .img_proyecto{
+    height:300px;
+  }
+
+  .txt_proyecto p{
+    font-size:22px;
+  }
+
+}/*-- 880px --*/
+
+
+@media screen and (max-width:768px){
+
+  .proyectos > .bloque_contenedor{
+    max-width:100%;
+  }
+
+  .fila_proyectos{
+    margin:0;      /* Necesario */
+  }
+
+  .proyecto{
+    margin-top:40px;
+    width:100%;
+  }
+  .img_proyecto{
+    height:auto;
+  }
+
+  .txt_proyecto{
+    position:relative;  /* Por la altura 'auto' que no coge bien la imagen */
+    top:-7px;
+  }
+  .txt_proyecto p{
+    font-size:22px;
+  }
+
+}/*-- 768px --*/

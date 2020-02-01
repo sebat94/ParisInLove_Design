@@ -1,0 +1,300 @@
+/*-- SlideShow --*/
+.SlideShow-Contenedor{
+  width:100%;
+  height:100%;
+  user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  position:relative;
+}
+
+/*-- Imágenes Slideshow --*/
+.Img-SlideShow{
+  width:100%;
+  height:100%;
+  float:left;
+  position:relative;
+  /*--padding:70px 0;      Parametrizar dependiendo del tamaño que quiera reservar por arriba y por abajo --*/
+  padding:115px 0 0 0;
+}
+.Img-SlideShow ul{
+  /*width:400%;*/         /*-- Calcular tamaño con una función --*/
+  height:100%;
+  overflow:hidden;
+  display:flex;
+  margin-left:0;      /*-- Este margen se moverá dependiendo de la imagen actual --*/
+}
+.Img-SlideShow ul li{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+.Img-SlideShow ul li{
+  width:100%;
+  height:100%;
+}
+/* Mantener proporción de imagen en caso de que se lo pidamos */
+.Escalar-Img-SlideShow{
+  /*width:;
+  height:;*/
+  overflow:hidden;
+  position:relative;
+  /*top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);*/
+}
+.Escalar-Img-SlideShow img{
+  width:100%;
+  height:100%;
+}
+
+/*-- FLECHAS SLIDESHOW --*/
+.Flecha-SlideShow{
+  width:60px;
+  height:60px;
+  position:absolute;
+  top:50%;
+  cursor:pointer;
+  z-index:100;
+  border:1px solid rgba(28, 28, 28, 0.5);
+  opacity:0;
+  transition:all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -ms-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+}
+.Flecha-SlideShow:hover{
+  border:1px solid #000;
+}
+.Flecha-SlideShow-Izq{
+  left:25px;
+}
+.Flecha-SlideShow-Der{
+  right:25px;
+}
+.Flecha-SlideShow-Der div,
+.Flecha-SlideShow-Izq div{
+  width:100%;
+  height:100%;
+  float:left;
+}
+.Flecha-SlideShow-Izq div span,
+.Flecha-SlideShow-Der div span{
+  content:'';
+  position:absolute;
+  width:30px;
+  height:1px;
+  background:rgb(28, 28, 28);
+}
+.Flecha-SlideShow-Izq div span:hover,
+.Flecha-SlideShow-Der div span:hover{
+  background:rgb(0, 0, 0);
+}
+.Flecha-SlideShow-Izq div span:first-of-type{
+  top:18px;
+  left:15px;
+  transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+.Flecha-SlideShow-Izq div span:last-of-type{
+  top:39px;
+  left:15px;
+  transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.Flecha-SlideShow-Der div span:first-of-type{
+  top:18px;
+  left:15px;
+  transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.Flecha-SlideShow-Der div span:last-of-type{
+  top:39px;
+  left:15px;
+  transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+
+
+/*-- DOTS --*/
+.Thumbs-SlideShow{
+  width:100%;
+  height:70px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  overflow:hidden;
+  padding:27.5px 0;
+  /*background:rgb(43, 43, 45);*/
+  opacity:0;
+  transition:all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -ms-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+}
+.Dots-SlideShow{
+  width:;                      /*-- Calcular Tamaño --*/
+  height:100%;
+  position:relative;
+  display:table;
+  margin:auto;
+  padding:0 40px;
+  /* margin-top and margin-bottom calculado con jQuery */
+}
+.Dot-SlideShow{
+  width:17px;
+  height:17px;
+  background:transparent;
+  border:2px solid #fff;
+  border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+  float:left;
+  position:relative;
+  margin:0 2.5px;
+  cursor:pointer;
+  transition:all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -ms-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+}
+.Dot-SlideShow:hover{
+  background:#fff;
+}
+.Dot-SlideShow-Active{
+  background:#fff;
+}
+
+
+/*-- BANNER TIME --*/
+#ProgressBar-SlideShow {
+  position:absolute;
+  top:110px;
+  left:0;
+  width:100%;
+  height:5px;
+  background:transparent;
+}
+#ProgressBar-SlideShow div {
+  width:0;
+  height:100%;
+  background:rgba(17, 17, 17, 0.25);
+}
+
+
+@media screen and (max-width:1200px){
+
+  /*-- REDUCIR TAMAÑO SLIDESHOW --*/
+  .SlideShow{
+    height:80% !important;
+  }
+
+  /*-- QUITAR FLECHAS SLIDESHOW --*/
+  .Flecha-SlideShow{
+    opacity:1 !important;
+  }
+  .Thumbs-SlideShow{
+    opacity:0 !important;
+  }
+
+}/*-- 1200px --*/
+
+
+@media screen and (max-width:968px){
+
+  /*-- REDUCIR TAMAÑO SLIDESHOW --*/
+  .SlideShow{
+    height:80% !important;
+  }
+
+}/*-- 1024px --*/
+
+
+@media screen and (max-width:640px){
+
+  /*-- REDUCIR TAMAÑO SLIDESHOW --*/
+  .SlideShow{
+    height:70% !important;
+  }
+
+  /*-- FLECHAS SLIDESHOW --*/
+  .Flecha-SlideShow{
+    width:50px;
+    height:50px;
+    top:54%;
+  }
+  .Flecha-SlideShow-Izq div span,
+  .Flecha-SlideShow-Der div span{
+    width:20px;
+  }
+  .Flecha-SlideShow-Izq div span:last-of-type,
+  .Flecha-SlideShow-Der div span:last-of-type{
+    top:31px;
+  }
+
+}/*-- 640px --*/
+
+
+@media screen and (max-width:560px){
+
+  /*-- FLECHAS SLIDESHOW --*/
+  .Flecha-SlideShow{
+    top:60%;
+  }
+  /*-- TXT PRESENTACIÓN --*/
+  .txt_presentacion h1{
+    font-size:28px;
+  }
+  .txt_presentacion h2{
+    font-size:20px;
+  }
+
+}/*-- 560px --*/
+
+
+@media screen and (max-width:430px){
+
+  /*-- FLECHAS SLIDESHOW --*/
+  .Flecha-SlideShow{
+    width:40px;
+    height:40px;
+    top:60%;
+  }
+  .Flecha-SlideShow-Izq div span,
+  .Flecha-SlideShow-Der div span{
+    width:16px;
+  }
+  .Flecha-SlideShow-Izq div span:first-of-type,
+  .Flecha-SlideShow-Der div span:first-of-type{
+    top:14px;
+    left:12px;
+  }
+  .Flecha-SlideShow-Izq div span:last-of-type,
+  .Flecha-SlideShow-Der div span:last-of-type{
+    top:25px;
+    left:12px;
+  }
+
+}/*-- 430px --*/
